@@ -51,11 +51,10 @@ step 5 : I cerate a nodegroup
 {
 
 ----> I setup like this k8/mainfest# ls
-      drwxr-xr-x 2 root root 4096 Sep 16 07:00 ./
-      drwxr-xr-x 3 root root 4096 Sep 16 07:00 ../
       -rw-r--r-- 1 root root  336 Sep 16 07:00 deployment.yml
       -rw-r--r-- 1 root root  458 Sep 16 07:00 ingress.yaml
       -rw-r--r-- 1 root root  186 Sep 16 07:00 service.yaml
+      
  ----> kubectl apply -f deployement.yml 
 output : deployment.apps/wisecow-deployment created
  ----> kubectl apply -f service.yml 
