@@ -1,0 +1,4 @@
+1. kubectl get deployment wisecow-deployment -o yaml | grep image:   output: image name:latest in there deployment.yaml 
+2. kubectl apply -f deployment.yaml
+3. sha256sum kubectl or sha256sum /usr/local/bin/kubectl output : #7721f265e18709862655affba5343e85e1980639395d5754473dafaadcaa69e3  
+  
