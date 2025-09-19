@@ -68,6 +68,10 @@ step 6 : i check my pod which service is running
     NAME                                          STATUS   ROLES    AGE   VERSION
     ip-172-31-45-194.us-west-2.compute.internal   Ready    <none>   46h   v1.29.15-eks-3abbec1
     ip-172-31-50-121.us-west-2.compute.internal   Ready    <none>   46h   v1.29.15-eks-3abbec1
+
+----> kubectl get deployment wisecow-deployment -o yaml | grep image:
+                        - image: wisecow/wisecow:latest
+
     
     root@ip-172-31-40-16:~/Cow-wisdom-web-server/wisecow# kubectl get svc
     NAME              TYPE           CLUSTER-IP    EXTERNAL-IP                                                              PORT(S)        AGE
